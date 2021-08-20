@@ -1,0 +1,190 @@
+body{
+background-color: rgb(255, 255, 255);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.content{
+    /* background-color: rgb(129, 85, 85); */
+    border-radius: 12px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.287);
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 13em;    */
+    /* justify-content: space-between; */
+    /* font-size: xx-large; */
+}
+
+.score{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 4em;
+
+}
+.add{
+    user-select: none;
+
+    background-color: gainsboro;
+    padding:12px;
+    display: flex;
+    padding:8px 88px;
+    align-items: center;
+    /* width: 333px; */
+    border-radius: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+    .sub{
+        user-select: none;
+        position: relative;
+        background-color: gainsboro;
+        padding:12px;
+        display: flex;
+        padding:6px 19px;
+        top: 12px;
+        align-items: center;
+        /* width: 333px; */
+        border-radius: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: x-large;
+        transition: 0.3s;
+        cursor: pointer;
+}
+.clr{
+    user-select: none;
+
+        position: relative;
+        background-color: gainsboro;
+        padding:12px;
+        display: flex;
+        padding:6px 84px;
+        top: 22px;
+        align-items: center;
+        /* width: 333px; */
+        border-radius: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: x-large;
+        transition: 0.3s;
+        cursor: pointer; 
+}
+.sub:hover{
+    background-color: rgb(31, 183, 253);
+
+}
+.add:hover{
+    background-color: rgb(103, 231, 64);
+
+}
+.clr:hover{
+    background-color: rgb(233, 104, 104);
+    border-radius: 0px;
+
+}
+
+/* .clr:hover + .options{
+    visibility: visible;
+}  */
+.clear{
+    user-select: none;
+    padding:6px 64px;
+    
+    /* position: relative; */
+    background-color: gainsboro;
+    /* padding:8px 88px; */
+
+    width: 88px;
+    display: flex;
+    /* padding:6px 84px; */
+    /* top: 55px; */
+    align-items: center;
+    /* width: 333px; */
+    /* border-radius: 12px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    transition: 0.3s;
+    cursor: pointer; 
+}
+.options{
+    
+    /* z-index: 1; */
+    position: relative;
+    /* top: 10px; */
+    opacity: 100;
+    visibility: hidden;
+    transition: 0.3s;
+    /* display: none; */
+}
+.save{
+    user-select: none;
+    padding:6px 64px;
+    
+    /* position: relative; */
+    background-color: gainsboro;
+    /* padding:8px 88px; */
+
+    width: 88px;
+    display: flex;
+    /* padding:6px 84px; */
+    /* top: 55px; */
+    align-items: center;
+    /* width: 333px; */
+    /* border-radius: 12px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    transition: 0.3s;
+    cursor: pointer; 
+}
+
+.history{
+    user-select: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* width: 344px; */
+    padding:0px 200px;
+    position: relative;
+    top: 28px;
+    transition: 3s ease all;
+}
+
+.history:hover{
+    background-color: rgba(220, 220, 220, 0.472);
+}
+
+.menu{
+    
+    position: relative;
+    /* visibility: hidden; */
+    /* padding-top: 18px; */
+ padding-left: 40px;   
+}
+.a{
+    border-radius: 10px;
+    background-color: gainsboro;
+    width: 55px;
+    transition: 0.4s;
+    border-style: none;
+    padding: 12px;
+    /* visibility: hidden; */
+}
+
+.sub:hover + .menu{
+    visibility: visible;
+}
+/* 
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* input[type=number]{
+    /* -moz-appearance: textfield; */
+    
+} */ */

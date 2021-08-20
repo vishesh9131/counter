@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pointsgiverapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="aa"></div>
+    <div class="content">
+    <div class="score" id="score">0</div>
+    <div class="add" onclick="score()">Add</div>
+    <div class="subbtn"> 
+        <div class="sub" onclick="sub()">Subtract
+        <div class="menu" id="menu">
+        <div class="1">
+            <input type="number" id="a" class="a" value="-3" max="0">
+        </div>
+
+    </div></div></div>
+   
+    
+    <div class="clr" onclick="a()">Save</div>
+    <div class="options" id="opt" onclick="a()"> 
+         <div class="clear" onclick="jero()">clear</div>
+         <div class="save" onclick="save1()">save</div></div>
+   
+    <div class="history" id="his"></div></div>
+    
+
+</body>
+
+<script>
+    let scoreEl = document.getElementById("score");
+    let save = document.getElementById("his");
+    let option1 = document.getElementById("opt");
+    let n = document.getElementById("a");
+    let option2 = document.getElementById("menu");
+    let Count = 0;
+    let nodevalue=0;
+    // let cout=0;
+    let foot = "saved scores are = "
+    
+ function jero(){
+     Count=0
+    scoreEl.textContent = Count;
+ }
+    function a(){
+        console.log("deployed");
+        opt.classList.toggle("options");
+    }
+    function score(){
+      Count+=1;
+        scoreEl.textContent = Count ;
+        // cout=Count; 
+    }
+    function sub(){
+       nodevalue = -n.value;
+        Count -= nodevalue;
+        console.log(nodevalue);
+        scoreEl.textContent = Count;
+        // Count=0;
+
+    }
+    // function fly(){
+    //     menu.classList.toggle("menu");
+    // }
+    // function clr(){
+    //     Count=0;
+    //     console.log("Count");
+    //     scoreEl.textContent = Count;
+
+    // }
+    function save1(){
+        foot += " " + Count + ",";
+        his.textContent = foot;
+        // scoreEl.textContent = 0 ;
+
+
+        
+    }
+
+
+</script>
+
+
+</html>
